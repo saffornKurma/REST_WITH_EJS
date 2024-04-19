@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit post</title>
+</head>
+<body>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+        <h3>ID:<%=post.id%></h3>
+        <h3>username :@<%=post.username%></h3>
+        <h4>Content :<%=post.content%></h4>
+        <h4>
+            Please edit below to change the content:
+        </h4>
+        <textarea name="content" id="" cols="30" rows="10" placeholder="Enter your thoughts"></textarea>
+    <button>SUBMIT</button>
+    </form>
+</body>
+</html>
